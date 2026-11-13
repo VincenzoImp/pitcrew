@@ -1,6 +1,6 @@
 {
   "name": "@vincenzoimp/pitcrew",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A crew for the pi coding agent: roles instead of model names, a per-session mode, child agents you can watch and steer, a guard, a verify gate, skills, and an unattended runner.",
   "keywords": [
     "pi-package",
