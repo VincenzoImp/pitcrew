@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { chmodSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { chmodSync, mkdirSync, mkdtempSync, realpathSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
@@ -246,7 +246,7 @@ test("a repo's check runs by itself only in your own repo or one you trusted in 
   const { ownOrTrusted } = await import("../lib/facts.ts");
   const { ProjectTrustStore } = await import("@earendil-works/pi-coding-agent");
   const agent = mkdtempSync(join(tmpdir(), "trust-agent-"));
-  const repo = mkdtempSync(join(tmpdir(), "trust-repo-"));
+  const repo = realpathSync(mkdtempSync(join(tmpdir(), "trust-repo-")));
   const saved = process.env.PI_CODING_AGENT_DIR;
   process.env.PI_CODING_AGENT_DIR = agent;
   try {
