@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/VincenzoImp/pitcrew/actions/workflows/ci.yml"><img src="https://github.com/VincenzoImp/pitcrew/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://www.npmjs.com/package/@vincenzoimp/pitcrew"><img src="https://img.shields.io/npm/v/@vincenzoimp/pitcrew.svg" alt="npm version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT licence"></a>
   <a href="UPSTREAM.md"><img src="https://img.shields.io/badge/pi-1.5.2-f26b1d.svg" alt="tested with pi 1.5.2"></a>
 </p>
@@ -39,12 +40,10 @@ local server.
 ## Quick start
 
 1. Install [pi](https://pi.dev) and log in to a provider (`/login` in pi).
-2. Set up pitcrew from a clone, in a terminal (it asks one or two questions):
+2. Set up pitcrew in a terminal (it asks one or two questions):
    ```sh
-   git clone https://github.com/VincenzoImp/pitcrew.git
-   cd pitcrew && npm ci --ignore-scripts && ./bin/pitcrew init
+   npx @vincenzoimp/pitcrew init
    ```
-   Once the package is on npm, `npx @vincenzoimp/pitcrew init` does the same without a clone.
 3. In a repo of yours, run `pi` and ask for something small: "the test for X fails, find out why and
    fix it".
 

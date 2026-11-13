@@ -41,5 +41,5 @@ and in the expected file, and review the rule above.
 ## Not done
 
 A byte-for-byte capture of the request on the wire needs a proxy between Claude Code and the API.
-That routes subscription traffic through a local proxy; it is left out until the owner decides it
-is worth the risk. The marker test shows what the model can see, which is what the harness depends on.
+That routes subscription traffic through a local proxy; it is left out because that risk is not
+worth it. The marker test shows what the model can see, which is what the harness depends on.

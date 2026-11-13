@@ -1,6 +1,6 @@
 # Third-party notices
 
-pitcrew is the owner's work under the repo's MIT licence, except the parts listed in section 1.
+pitcrew is released under the repo's MIT licence, except the parts listed in section 1.
 Those parts copy or closely adapt text or code from other projects; their licences apply to them.
 Section 2 lists projects that shaped the design with no text copied. This is the only place where
 the harness records where its text comes from: skills, rules, docs and code do not.

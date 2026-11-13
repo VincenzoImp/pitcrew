@@ -13,7 +13,8 @@ is later (#122, #125, #137 came after #113; #140 is the pull request of #114). T
 - `acceptance`: the pass over live checks left open.
 - `user pass`: every command and flag of the README once, as a user.
 
-`#NN` in the Issue column and in the text is an issue or pull request of this repo. PR and issue numbers inside a result
+`#NN` in the Issue column and in the text is an issue or pull request of the development tracker
+used before the first release, not of this repo: those numbers do not exist here. PR and issue numbers inside a result
 (for example "PR #21", "issue #12") belong to the scratch repo.
 
 **Areas.** Each area has the latest result on top. Checks use `| Check | Model | Result | Issue |`,
