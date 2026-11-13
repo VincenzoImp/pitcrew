@@ -6,7 +6,7 @@ import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-a
 import { currentMode, FIX_ROUNDS } from "../../lib/mode.ts";
 import { sessionRunDir } from "../../lib/paths.ts";
 import { splitCommands } from "../guard/rules.ts";
-import { discoverVerify, gitRoot, type VerifyCommand } from "../../lib/verify.ts";
+import { describeVerify, discoverVerify, gitRoot, type VerifyCommand } from "../../lib/verify.ts";
 import { ownOrTrusted } from "../../lib/facts.ts";
 import { addShared, findShared, type Receipt, receiptsFile, treeId } from "./receipts.ts";
 
@@ -162,7 +162,7 @@ export default function verifyGate(pi: ExtensionAPI, runsHere: (cwd: string) => 
     }
 
     show(ctx, "verify ●");
-    ctx.ui.notify(`verify: running ${found.command}`, "info");
+    ctx.ui.notify(`verify: running ${describeVerify(found)}`, "info");
     const started = Date.now();
     let exit = 0;
     let output = "";

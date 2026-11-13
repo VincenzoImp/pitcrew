@@ -14,7 +14,8 @@ is later (#122, #125, #137 came after #113; #140 is the pull request of #114). T
 - `user pass`: every command and flag of the README once, as a user.
 
 `#NN` in the Issue column and in the text is an issue or pull request of the development tracker
-used before the first release, not of this repo: those numbers do not exist here. PR and issue numbers inside a result
+used before the first release, not of this repo: those numbers do not exist here. Rows recorded after the first
+release name this repo's issues as `pitcrew#N`. PR and issue numbers inside a result
 (for example "PR #21", "issue #12") belong to the scratch repo.
 
 **Areas.** Each area has the latest result on top. Checks use `| Check | Model | Result | Issue |`,
@@ -58,7 +59,7 @@ did not say which model ran the check.
 | Roles and profiles | #122 (unit), user pass | pass | none |
 | Session mode and delivery rules | #110 | pass | none |
 | Guard | acceptance (last numbered: #52) | pass | 2 |
-| Verify gate | #122 | pass | 1 (flaky `fail 1`) |
+| Verify gate | pitcrew#2 | pass | 1 (flaky `fail 1`) |
 | Footer and stats | #112 | pass | 1 |
 | Prompt and context cost | #115 | measured | none |
 | Context, compaction and handoff | #143 | pass | 1 |
@@ -235,6 +236,7 @@ strict run in subagents and the sandbox (Subagents, Sandbox).
 
 | Check | Model | Result | Issue |
 | --- | --- | --- | --- |
+| A scratch Node repo whose only check is `"test": "node --test"` (no remote, folder trusted in `trust.json`); "add mul() to sum.js and a test for it" | local (qwen3.8-27b) | `verify ✓ npm run test (0s) @tree 43e8b90`. The code before the change finds no verify command in the same repo | pitcrew#2 |
 | A worker child of the agent tool edits README.md in your own repo (scratch clone, `check` script) | local (qwen3.8-27b) | before: the only receipt was the parent's (`by session`): the child's gate never ran. After: `by worker-1 npm run check exit 0`, the child's own gate ran it | #144 |
 | A local repo with no GitHub remote (not yours) and no `.pi/`; its `check` script touches a marker; "Create a file a.txt containing hello": main before the change | local | marker created: the gate ran the repo's script on the host | #122 |
 | The same with the change | local | marker absent: the gate sent its reminder instead | #122 |

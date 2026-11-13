@@ -39,6 +39,22 @@ your own or a trusted repo) as `PI_VERIFY`; `pitcrew run` does the same for its 
 A different command, another root, or a new tree runs. The file is not a security
 control: a worker can write to it, as it can edit the verify script.
 
+## Which command
+
+The first match wins (`lib/verify.ts`), in the git top level of the session's folder:
+
+1. `PI_VERIFY`;
+2. a `verify` script, then a `check` script in `package.json` (run with `npm run`, or `pnpm`,
+   `yarn`, `bun` when their lockfile is there);
+3. a `verify` target in a Makefile or justfile;
+4. an executable `scripts/verify`;
+5. only when none of these exists: the `test` script in `package.json` (not the placeholder of
+   `npm init` that only fails), then a `test` target in a Makefile or justfile.
+
+The gate says which command it runs and why, for example
+``verify: running npm run test (the `test` script in package.json; no verify or check script, …)``.
+`pitcrew run` prints the same at its start. No match: the reminder.
+
 ## Switches (session mode)
 
 | Switch | Effect |
@@ -58,5 +74,5 @@ Keep verify fast (format, lint, types, unit tests); leave slow suites to CI.
 
 ## For other extensions
 
-`import { discoverVerify } from "../../lib/verify.ts"` returns `{ command, source, root }` or
-`undefined`. It has no pi dependency.
+`import { discoverVerify } from "../../lib/verify.ts"` returns `{ command, source, root, reason }` or
+`undefined`; `describeVerify` gives the command with its reason. It has no pi dependency.

@@ -42,8 +42,9 @@ fresh check. While they run, the footer shows `agents 1▶`:
 
 When the turn changed files, the verify gate runs the repo's own check and shows `verify ✓`, or
 sends the failure back to the model. It finds the check as a `verify` or `check` script in
-`package.json`, a `verify` target in a Makefile or justfile, `scripts/verify`, or `PI_VERIFY`;
-`test` is never guessed. A repo with none gets a reminder instead ([verify-gate.md](verify-gate.md)).
+`package.json`, a `verify` target in a Makefile or justfile, `scripts/verify`, or `PI_VERIFY`; with
+none of these, the `test` script or target. A repo with none gets a reminder instead
+([verify-gate.md](verify-gate.md)).
 
 ## 4. Let it go further
 

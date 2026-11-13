@@ -39,7 +39,8 @@ from any checkout of the repo. `--dry-run` prints the digest and the frontier an
    (`PITCREW_RUNNER_ROLE=worker`) and also a nested `pitcrew run`.
 4. **Checks**, cheap first, on the committed tree: a clean worktree, at least one commit, the repo's
    verify command (found in the main checkout like the verify gate: `PI_VERIFY`, `verify` or `check`
-   script, …; the worker is told not to change it), `pitcrew check` by the `leanCode` switch (`block`
+   script, …, and the `test` script as a fallback, [verify-gate.md](verify-gate.md#which-command);
+   the start line names the command and why; the worker is told not to change it), `pitcrew check` by the `leanCode` switch (`block`
    fails the check, `warn` goes into the PR body). Then push, a draft PR (`Closes #<issue>`), CI
    (`gh pr checks --watch --fail-fast`, when the repo has workflows), and a fresh `reviewer` by the
    `review` switch: `on`, or `auto` when the run merges by itself (`stop` `merge` or `milestone`);

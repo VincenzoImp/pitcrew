@@ -11,7 +11,7 @@ import { DEFAULT_CAPS } from "./settings.ts";
 import { deliveryFacts } from "./facts.ts";
 import { piModels } from "./pi.ts";
 import { chooseActive, ENV_ROLES, loadProfiles, snapshot } from "./profile.ts";
-import { discoverVerify } from "./verify.ts";
+import { describeVerify, discoverVerify } from "./verify.ts";
 import { branchChanges, DEFAULT_BOUNDS, leanReport, render as renderLean, settingsBounds } from "./lean.ts";
 import { FIX_ROUNDS, type Mode, type ModeInput, resolveMode, reviews, trackingFor } from "./mode.ts";
 import { ownSettings, settingsNotice } from "./settings.ts";
@@ -432,7 +432,8 @@ export async function runTarget(o: RunOptions): Promise<number> {
   c.runDir = join(c.runs, id);
   mkdirSync(c.runDir, { recursive: true });
   c.deadline = c.cfg.maxHours ? Date.now() + c.cfg.maxHours * 3_600_000 : Infinity; // 0: no wall clock
-  c.verify = discoverVerify(c.root)?.command;
+  const verify = discoverVerify(c.root);
+  c.verify = verify?.command;
   const profiles = loadProfiles([join(PKG, "profiles"), join(agentDir(), "profiles"), ...(c.foreign ? [] : [join(c.root, ".pi", "profiles")])]);
   // --profile wins over the role map of the session this run was started from.
   const named = o.profile || process.env[ENV_ROLES] || process.env.PITCREW_PROFILE || c.profileSetting;
@@ -447,7 +448,7 @@ export async function runTarget(o: RunOptions): Promise<number> {
   const open = P.unbounded(c.cfg, c.agentLimitMs);
   if (open.length) c.log(`budgets with no limit: ${open.join(", ")} (pitcrew.runner, pitcrew.agent; --max-hours, --max-issues)`);
   report(c, "working", title);
-  c.log(`pitcrew run ${id}: ${title}; profile ${JSON.parse(c.roles).profile}, stop ${c.mode.stop}, rigor ${c.mode.rigor}${c.box ? ", workers in the sandbox" : ""}; verify ${c.verify ?? "none"}; ledger ${c.ledgerFile}`);
+  c.log(`pitcrew run ${id}: ${title}; profile ${JSON.parse(c.roles).profile}, stop ${c.mode.stop}, rigor ${c.mode.rigor}${c.box ? ", workers in the sandbox" : ""}; verify ${verify ? describeVerify(verify) : "none"}; ledger ${c.ledgerFile}`);
   let stop = "";
   try {
     for (let issues = issues0; ; issues = loadIssues(c, c.target)) {

@@ -8,6 +8,7 @@ import { addShared, findShared, receiptsFile } from "../extensions/verify-gate/r
 import verifyGate, { discoverVerify, isCheckCommand, REMINDER, treeId, writesFiles } from "../extensions/verify-gate/index.ts";
 import { fakeCtx, fakePi } from "./helpers.mjs";
 import { ENV_MODE } from "../lib/mode.ts";
+import { describeVerify } from "../lib/verify.ts";
 
 const git = (cwd, ...args) => execFileSync("git", args, { cwd, stdio: "ignore" });
 function repo(files = {}) {
@@ -39,11 +40,27 @@ test("discovery order", () => {
     check({ Makefile: "VERIFY := 1\nbuild:\n" }, undefined);
     check({ justfile: "verify:\n  cargo test\n" }, "just verify");
     check({ "scripts/verify": "#!/bin/sh\nexit 0\n" }, "./scripts/verify");
-    check({ "package.json": pkg({ test: "z" }) }, undefined);
     check({ "package.json": pkg({ verify: "x" }) }, "make ci", { PI_VERIFY: "make ci" });
+    // The test entry points only after every explicit verify command.
+    check({ "package.json": pkg({ test: "node --test" }) }, "npm run test");
+    check({ "package.json": pkg({ test: "z" }), "pnpm-lock.yaml": "" }, "pnpm run test");
+    check({ "package.json": pkg({ test: "z" }), "scripts/verify": "#!/bin/sh\nexit 0\n" }, "./scripts/verify");
+    check({ "package.json": pkg({ test: "echo \"Error: no test specified\" && exit 1" }) }, undefined);
+    check({ Makefile: "build:\n\tcc a.c\ntest: build\n\t./a.out\n" }, "make test");
+    check({ justfile: "test:\n  cargo test\n" }, "just test");
+    check({ "package.json": pkg({ test: "z" }), Makefile: "test:\n\tmake x\n" }, "npm run test");
+    check({ Makefile: "TEST := 1\nbuild:\n" }, undefined);
+    check({ "package.json": pkg({ lint: "x" }) }, undefined);
     const sub = repo({ "package.json": pkg({ verify: "x" }), "src/a.ts": "" });
     dirs.push(sub);
     assert.equal(discoverVerify(join(sub, "src"), {})?.root, execFileSync("git", ["rev-parse", "--show-toplevel"], { cwd: sub, encoding: "utf8" }).trim());
+    // The output says which command was chosen and why.
+    const only = repo({ "package.json": pkg({ test: "node --test" }) });
+    dirs.push(only);
+    assert.equal(describeVerify(discoverVerify(only, {})),
+      "npm run test (the `test` script in package.json; no verify or check script, verify target or scripts/verify)");
+    assert.equal(describeVerify(discoverVerify(sub, {})), "npm run verify (the `verify` script in package.json)");
+    assert.equal(describeVerify(discoverVerify(sub, { PI_VERIFY: "make ci" })), "make ci (PI_VERIFY is set)");
   } finally {
     for (const d of dirs) rmSync(d, { recursive: true, force: true });
   }
