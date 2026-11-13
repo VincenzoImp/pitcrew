@@ -4,6 +4,16 @@ All notable changes to pitcrew. pi shows the entries newer than your installed v
 update. Versions follow [semantic versioning](https://semver.org/); before 1.0, a minor version can
 change settings or behaviour, and its entry says how to move.
 
+## [0.1.2] - 2026-11-13
+
+### Fixed
+
+- The sandbox starts from an npm install. pi installs packages under `~/.pi`, which is never
+  mounted, so `pitcrew box` and `pitcrew run` on a repo that is not yours stopped with "refusing to
+  mount". The snapshot of an npm install now carries pitcrew's runtime dependencies, and a snapshot
+  is built aside, so a failed build is never reused (#15).
+- The test suite passes on macOS (#16).
+
 ## [0.1.1] - 2026-11-13
 
 ### Changed
