@@ -42,6 +42,23 @@ Some behaviour needs a real model, terminal or GitHub repo. The scripts are in `
 affects one of them, run it and add a row. A local model or a small one at low thinking is enough
 for most checks.
 
+## Releases
+
+For maintainers. npm gets the package only through
+[.github/workflows/publish.yml](.github/workflows/publish.yml), with npm trusted publishing: there is
+no npm token.
+
+1. A pull request bumps `version` in `package.json` and `package-lock.json` (`npm version X.Y.Z
+   --no-git-tag-version`) and adds a `## [X.Y.Z] - <date>` section to `CHANGELOG.md`. pi shows that
+   section to users after an update.
+2. Merge it.
+3. Tag the merge commit on `main` and push the tag: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+4. The workflow runs `npm run check`, fails if the tag is not `v` + the `package.json` version or
+   not on `main`, stages the package (`npm stage publish`), and creates the GitHub release with the
+   notes of the `CHANGELOG.md` section.
+5. A maintainer approves the staged version on npmjs.com (**Staged Packages**, with 2FA), or with
+   `npm stage approve <stage-id>`. Only then is it public.
+
 ## Style
 
 Simple Technical English in docs, comments and messages: short sentences, one word for one thing
