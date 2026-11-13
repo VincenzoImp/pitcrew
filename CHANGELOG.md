@@ -4,6 +4,22 @@ All notable changes to pitcrew. pi shows the entries newer than your installed v
 update. Versions follow [semantic versioning](https://semver.org/); before 1.0, a minor version can
 change settings or behaviour, and its entry says how to move.
 
+## [0.1.1] - 2026-11-13
+
+### Changed
+
+- The verify gate and `pitcrew run` now find a repo whose only check is its `test` script: after
+  `PI_VERIFY`, a `verify` or `check` script, a `verify` target and `scripts/verify`, they use the
+  `package.json` `test` script (not the `npm init` placeholder), then a Makefile or justfile `test`
+  target. Both say which command they chose and why.
+- The docs install pitcrew with `npx @vincenzoimp/pitcrew init`; a clone is for working on pitcrew
+  itself. `docs/sandbox.md` describes the sandbox mount of an npm install.
+
+### Added
+
+- Releases go to npm from a version tag through a GitHub workflow with npm trusted publishing (no
+  token); a maintainer approves each staged version. The steps are in `CONTRIBUTING.md`.
+
 ## [0.1.0] - 2026-11-13
 
 First public version, tested with pi 1.5.2. Earlier development versions were not released.
