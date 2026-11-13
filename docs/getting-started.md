@@ -6,13 +6,11 @@ in to at least one provider, and Node 22.19 or later.
 ## 1. Install
 
 ```sh
-git clone https://github.com/VincenzoImp/pitcrew.git
-cd pitcrew && npm ci --ignore-scripts && ./bin/pitcrew init
+npx @vincenzoimp/pitcrew init
 ```
 
 Run it in a terminal: it asks you to confirm the profile and whether to add pitcrew's working rules
-(say yes if you want the model to keep its notes out of your repo). Once the package is published,
-`npx @vincenzoimp/pitcrew init` does the same without a clone.
+(say yes if you want the model to keep its notes out of your repo).
 
 `init` registers the package with pi, adds the baseline settings, proposes a profile that works
 with your logins, and lists the optional parts ([install.md](install.md)). Keep its output: the

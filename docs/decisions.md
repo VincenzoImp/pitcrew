@@ -9,7 +9,7 @@ item.
 | pi's `RpcClient` for children | it starts `node <cliPath>` and cannot answer `extension_ui_request`; children need both (bun binaries, `ask_parent`, guard confirms) |
 | In-process SDK children | SDK sessions load no built-in extensions, fail on the Claude bridge, share two code-mode workers per process, and lose the guard's process isolation |
 | Code mode on by default, or `codemode.mode: only` | +550 to 760 tokens per request with no measured gain ([settings.md](settings.md)); the bridge drops its rule line |
-| Fallback models on retry, phase-based model switches, classifier routing | the owner's rule: no fallback, fail loudly. A phase switch overrides explicit roles and costs a cache miss; classifiers need API keys, not subscriptions |
+| Fallback models on retry, phase-based model switches, classifier routing | a design rule: no fallback, fail loudly. A phase switch overrides explicit roles and costs a cache miss; classifiers need API keys, not subscriptions |
 | `modelThinkingLevels` for roles | static, keyed by exact `provider/modelId`; profiles change per session |
 | Tool `promptGuidelines`, `promptSnippet`, a returned `systemPrompt` | the Claude bridge drops them ([claude-access.md](claude-access.md)) |
 | `SYSTEM.md` to cut pi's `docs` prompt section | it replaces the preamble, tools and rules too; the bridge drops that section anyway |

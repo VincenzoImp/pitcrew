@@ -6,19 +6,12 @@ key, or a local server).
 
 ## Install
 
-From npm, once the package is published:
-
 ```sh
 npx @vincenzoimp/pitcrew init
 ```
 
-From a clone (works today):
-
-```sh
-git clone https://github.com/VincenzoImp/pitcrew.git
-cd pitcrew && npm ci --ignore-scripts
-./bin/pitcrew init
-```
+This runs `pitcrew init` from the npm package. It installs the package into pi
+(`pi install npm:@vincenzoimp/pitcrew`) and does the steps below.
 
 In a terminal, `pitcrew init` asks at most two questions and prints one line per part (`ok`, `add`, `note`,
 `option`, `skip`, `missing`). Run it again at any time: it changes only what is missing.
@@ -36,8 +29,14 @@ and says so.
 | Command | links `~/.local/bin/pitcrew` to the package's `bin/pitcrew`, and says if that folder is not on `PATH` |
 | Optional parts | reports what is missing and how to add it: `gh` and its login, the Exa key, the Claude bridge, Docker and the sandbox image, the sandbox's Claude token, the browser for `browser-check` |
 
-Other ways to install the package itself (then run `pitcrew init` for the rest):
-`pi install npm:@vincenzoimp/pitcrew`, `pi install git:github.com/VincenzoImp/pitcrew`.
+If pi already has the package (`pi install npm:@vincenzoimp/pitcrew`), `npx @vincenzoimp/pitcrew init`
+does the other steps. To work on pitcrew itself, install it from a clone:
+
+```sh
+git clone https://github.com/VincenzoImp/pitcrew.git
+cd pitcrew && npm ci --ignore-scripts
+./bin/pitcrew init
+```
 
 ## Optional parts
 
