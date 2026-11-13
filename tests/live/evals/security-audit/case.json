@@ -1,0 +1,15 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["/skill:security-audit Full security audit of this repo, quick profile, budget 8 agents. Report files as the skill says."],
+  "timeoutMin": 150,
+  "checks": [
+    { "name": "creates the run folder outside the repo", "tool": "bash", "args": "check-audit\\.mjs[^\"]*new-run" },
+    { "name": "recon and hunting by agents", "tool": "agent", "args": "\"agent\":\\s*\"(scout|reviewer)\"" },
+    { "name": "findings pass the schema check", "transcript": "PASS: \\d+ records" },
+    { "name": "finds the command injection in /thumb", "text": "(command injection|execSync|shell)" },
+    { "name": "does not report the sort-key Function as a finding", "text": "new Function[^\\n]{0,200}(critical|high|medium)\\b", "not": true },
+    { "name": "repo unchanged", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

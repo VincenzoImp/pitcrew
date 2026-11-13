@@ -1,0 +1,48 @@
+#!/usr/bin/env node
+// pitcrew: small commands of the harness that run outside a pi session. Docs: docs/commands.md.
+// This file only prepares module loading; the commands are in cli.mjs.
+import { existsSync, readFileSync, realpathSync } from "node:fs";
+import { registerHooks, stripTypeScriptTypes } from "node:module";
+import { delimiter, dirname, join } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+
+// Two things an npm install needs and a checkout does not:
+// - Node strips TypeScript types itself, but not for files under node_modules: strip them here.
+// - pi gives its own packages (@earendil-works/*, typebox) to extensions at run time. From the
+//   shell, a checkout finds them in its node_modules (dev dependencies); an npm install does not
+//   have them, so they come from the pi on PATH.
+let piPackage;
+function findPi() {
+  if (piPackage !== undefined) return piPackage;
+  piPackage = null;
+  for (const dir of (process.env.PATH ?? "").split(delimiter)) {
+    const bin = join(dir, "pi");
+    if (!existsSync(bin)) continue;
+    for (let d = dirname(realpathSync(bin)); d !== dirname(d); d = dirname(d)) {
+      const pkg = join(d, "package.json");
+      if (existsSync(pkg) && JSON.parse(readFileSync(pkg, "utf8")).name === "@earendil-works/pi-coding-agent") return (piPackage = pathToFileURL(pkg).href);
+    }
+  }
+  return piPackage;
+}
+
+registerHooks({
+  resolve(specifier, context, next) {
+    try {
+      return next(specifier, context);
+    } catch (error) {
+      const host = /^(@earendil-works\/|typebox($|\/))/.test(specifier);
+      if (!host || error?.code !== "ERR_MODULE_NOT_FOUND" || !findPi()) throw error;
+      return next(specifier, { ...context, parentURL: piPackage });
+    }
+  },
+  load(url, context, next) {
+    if (url.startsWith("file:") && url.endsWith(".ts") && url.includes("/node_modules/")) {
+      const source = readFileSync(fileURLToPath(url), "utf8");
+      return { format: "module", source: stripTypeScriptTypes(source), shortCircuit: true };
+    }
+    return next(url, context);
+  },
+});
+
+await import("./cli.mjs");

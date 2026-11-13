@@ -1,0 +1,7 @@
+{
+  "lead": { "model": "claude-bridge/claude-opus-5-5", "thinking": "high" },
+  "worker": { "model": "claude-bridge/claude-opus-5-5", "thinking": "medium" },
+  "scout": { "model": "claude-bridge/claude-sonnet-5-5", "thinking": "low" },
+  "reviewer": { "model": "claude-bridge/claude-opus-5-5", "thinking": "high" },
+  "second": { "model": "claude-bridge/claude-sonnet-5-5", "thinking": "high" }
+}

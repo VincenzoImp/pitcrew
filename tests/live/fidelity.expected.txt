@@ -1,0 +1,5 @@
+# Channels that reach the model, per access path. Recorded 2026-11-12: pi 1.5.2, pi-claude-bridge 0.12.0.
+# Produce with: tests/live/fidelity.sh role/lead claude-bridge/<small model>:low   (role/lead on the local profile)
+pi native (local model): APPENDFLAG GLOBALRULES GUIDELINE MESSAGE REPORULES SECTION SKILLDESC SNIPPET TOOLDESC TOOLRESULT
+claude-bridge: APPENDFLAG GLOBALRULES MESSAGE REPORULES SECTION SKILLDESC TOOLDESC TOOLRESULT
+claude-bridge, CANARY_FORCE=1: the same; FORCED does not arrive and the turn does not fail

@@ -1,0 +1,9 @@
+{
+  "packages": ["/opt/pitcrew-box/node_modules/pi-claude-bridge", "/opt/pitcrew"],
+  "defaultProvider": "role",
+  "defaultModel": "lead",
+  "enabledModels": ["role/*"],
+  "cacheWarming": "off",
+  "enableInstallTelemetry": false,
+  "defaultProjectTrust": "never"
+}

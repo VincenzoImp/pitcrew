@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Add compareVersions(a, b) to versions.js: returns -1, 0 or 1; missing parts count as 0, so 1.2 equals 1.2.0. Build it test-first. The single seam is the exported function; go ahead."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "tdd/SKILL\\.md" },
+    { "name": "a test runs red before the code exists", "transcript": "call bash[^\\n]*(node --test|npm test)[\\s\\S]*(fail [1-9]|not ok)" },
+    { "name": "suite green at the end", "command": "npm test 2>&1 | grep -E \"fail [0-9]\"", "expect": "fail 0" },
+    { "name": "behaviour right", "command": "node -e 'import(\"./versions.js\").then(m=>console.log(m.compareVersions(\"1.2\",\"1.2.0\"), m.compareVersions(\"1.10\",\"1.9\")))'", "expect": "^0 1" },
+    { "name": "tests stay in proportion (test lines at most 3x code lines)", "command": "c=$(cat versions.js | wc -l); t=$(cat test/*.js | wc -l); [ $t -le $((3*c+10)) ] && echo ok $c $t || echo bloat $c $t", "expect": "^ok" }
+  ]
+}

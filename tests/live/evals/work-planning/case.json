@@ -1,0 +1,12 @@
+{
+  "setup": "setup.sh",
+  "tracking": "local",
+  "args": ["--stop", "plan"],
+  "prompts": ["/skill:work-planning Customers can cancel an order that has not shipped.", "Yes to all your recommendations. Write the plan."],
+  "checks": [
+    { "name": "reads no mode with printenv (the mode is a message)", "tool": "bash", "args": "PITCREW_MODE", "not": true },
+    { "name": "plan written outside the repo, in the plans folder", "tool": "bash", "args": "plans-dir" },
+    { "name": "plan has acceptance checks", "transcript": "(Check:|Evidence:)" },
+    { "name": "builds nothing: repo unchanged", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

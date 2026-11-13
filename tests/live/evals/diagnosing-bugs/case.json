@@ -1,0 +1,12 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Our schedule total is wrong: durations 1h30m and 15m give 4500 seconds instead of 6300. Fix it."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "diagnosing-bugs/SKILL\\.md" },
+    { "name": "shows the bug with a command before editing", "transcript": "call bash[^\\n]*(node|npm)[\\s\\S]*4500[\\s\\S]*call (edit|write)" },
+    { "name": "a regression test exists and the suite passes", "command": "grep -c 1h30m test/*.js; npm test 2>&1 | grep -E \"(fail|pass) [0-9]\"", "expect": "^[1-9][\\s\\S]*fail 0" },
+    { "name": "fixed in the shared function", "command": "node -e 'import(\"./duration.js\").then(m=>console.log(m.parseDuration(\"1h30m\")))'", "expect": "^5400" }
+  ]
+}

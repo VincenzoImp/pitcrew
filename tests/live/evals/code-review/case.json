@@ -1,0 +1,16 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Review the change on branch feature against main. It implements issue #7: 'Add discount code SAVE10: 10% off the cart total, rounded to whole cents. Unknown codes are ignored.' Report only; change nothing."],
+  "timeoutMin": 90,
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "code-review/SKILL\\.md" },
+    { "name": "runs the repo's checks first", "tool": "bash", "args": "npm test|node --test" },
+    { "name": "starts a fresh reviewer", "tool": "agent", "args": "\"agent\":\\s*\"reviewer\"" },
+    { "name": "finds the planted bug (percent applied as a factor: negative total)", "text": "(negative|-9000|-9,000|this\\.percent|\\* ?10\\b|percent / ?100|1000%)" },
+    { "name": "finds the planted over-engineering (strategy, registry, unused options)", "text": "(YAGNI|speculative|over.?engineer|registry|DiscountStrategy|roundingMode|maxDiscount|Lean)" },
+    { "name": "flags the tests that miss the bug", "text": "(test)[\\s\\S]{0,300}(mock|SAVE10|does not|miss|no test)" },
+    { "name": "changes nothing", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

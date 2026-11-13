@@ -1,0 +1,7 @@
+{
+  "lead": { "model": "google/gemini-pro-latest", "thinking": "high" },
+  "worker": { "model": "google/gemini-pro-latest", "thinking": "medium" },
+  "scout": { "model": "google/gemini-flash-latest", "thinking": "low" },
+  "reviewer": { "model": "google/gemini-pro-latest", "thinking": "high" },
+  "second": { "model": "google/gemini-flash-latest", "thinking": "high" }
+}

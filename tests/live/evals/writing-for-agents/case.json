@@ -1,0 +1,11 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["/skill:writing-for-agents Trim AGENTS.md: keep every rule an agent needs, cut the rest."],
+  "checks": [
+    { "name": "the file got shorter", "command": "wc -w < AGENTS.md", "expect": "^\\s*([0-9]|[0-9][0-9]|1[0-1][0-9])\\s*$" },
+    { "name": "keeps the test command", "command": "grep -c 'make check' AGENTS.md", "expect": "^[1-9]" },
+    { "name": "keeps the migration rule", "command": "grep -ci 'migration' AGENTS.md", "expect": "^[1-9]" }
+  ]
+}

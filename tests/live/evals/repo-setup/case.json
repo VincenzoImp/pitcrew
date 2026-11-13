@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["/skill:repo-setup This is an existing repo I will contribute to. Tell me its rules for a change (branch, commit, checks); change nothing."],
+  "checks": [
+    { "name": "reads the contribution guide", "tool": "read", "args": "CONTRIBUTING" },
+    { "name": "reports the commit style", "text": "conventional|feat:|fix:" },
+    { "name": "reports the branch rule", "text": "feature/|branch" },
+    { "name": "reports the check command", "text": "npm run ci" },
+    { "name": "changes nothing", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

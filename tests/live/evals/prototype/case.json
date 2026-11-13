@@ -1,0 +1,11 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["/skill:prototype Quick spike: can node:test run a test file written in TypeScript in this Node version without any build step? Answer the question; do not build anything we keep."],
+  "checks": [
+    { "name": "runs a throwaway experiment", "tool": "bash", "args": "node" },
+    { "name": "answers yes or no with the evidence", "text": "(yes|no)[\\s\\S]*(node|v2\\d)" },
+    { "name": "leaves nothing in the repo", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

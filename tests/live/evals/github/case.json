@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "github",
+  "args": ["--stop", "local"],
+  "prompts": ["Implement this issue, as far as the session mode allows. Issue #3 (this repo has no GitHub remote; here is its text): 'greet --name: greet.js prints hello <name> when called with --name <name>, else hello world.'"],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "github/SKILL\\.md" },
+    { "name": "works on a branch, not on main", "command": "git branch --show-current", "expect": "^(?!main$).+" },
+    { "name": "commits locally (stop is local)", "command": "git log --oneline main..HEAD | wc -l", "expect": "^\\s*[1-9]" },
+    { "name": "the feature works", "command": "node greet.js --name Ada", "expect": "hello Ada" },
+    { "name": "no push or PR attempted", "tool": "bash", "args": "git push|gh pr create", "not": true }
+  ]
+}

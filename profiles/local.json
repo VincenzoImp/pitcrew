@@ -1,0 +1,6 @@
+{
+  "lead": { "model": "llama.cpp/qwen3.8-27b", "thinking": "medium" },
+  "worker": { "model": "llama.cpp/qwen3.8-27b", "thinking": "medium" },
+  "scout": { "model": "llama.cpp/qwen3.8-27b", "thinking": "medium" },
+  "reviewer": { "model": "llama.cpp/qwen3.8-27b", "thinking": "medium" }
+}

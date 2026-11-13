@@ -1,0 +1,12 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Restyle the signup form in signup.html so it is usable and accessible. Keep it one static file."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "frontend-design/SKILL\\.md" },
+    { "name": "every input has a label", "command": "n=$(grep -o '<input' signup.html | wc -l); l=$(grep -oE '<label[^>]*for=' signup.html | wc -l); [ $l -ge $n ] && echo ok $n $l || echo missing $n $l", "expect": "^ok" },
+    { "name": "visible focus style", "command": "grep -c ':focus' signup.html", "expect": "^[1-9]" },
+    { "name": "still one file", "command": "git status --porcelain | wc -l", "expect": "^\\s*1\\s*$" }
+  ]
+}

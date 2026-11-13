@@ -1,0 +1,12 @@
+{
+  "setup": "../work-planning/setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "plan"],
+  "prompts": ["/skill:work-planning grill I want customers to be able to cancel an order."],
+  "checks": [
+    { "name": "reads the code before asking", "tool": "read|bash", "args": "orders\\.js" },
+    { "name": "asks numbered questions, each with a recommendation", "text": "(Q1|1\\.)[\\s\\S]*(recommend|Recommendation)" },
+    { "name": "asks about shipped orders (the state rule)", "text": "ship" },
+    { "name": "builds nothing", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

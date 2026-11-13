@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="356" viewBox="0 0 1040 356" role="img">
+<title>/mode</title>
+<rect width="100%" height="100%" rx="8" fill="#0d1117"/>
+<circle cx="18" cy="16" r="5" fill="#ff5f57"/><circle cx="34" cy="16" r="5" fill="#febc2e"/><circle cx="50" cy="16" r="5" fill="#28c840"/>
+<text x="520" y="20" fill="#8b949e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" text-anchor="middle">/mode</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" xml:space="preserve">
+<text x="24.4" y="47" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">Only</text>
+<text x="66.4" y="47" fill="#bc8cff" textLength="58.8" lengthAdjust="spacingAndGlyphs">cart.js</text>
+<text x="133.6" y="47" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="167.2" y="47" fill="#bc8cff" textLength="100.8" lengthAdjust="spacingAndGlyphs">cart.test.js</text>
+<text x="276.4" y="47" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">are</text>
+<text x="310.0" y="47" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">modified.</text>
+<text x="394.0" y="47" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">Nothing</text>
+<text x="461.2" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="486.4" y="47" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">committed</text>
+<text x="570.4" y="47" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="604.0" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">no</text>
+<text x="629.2" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">PR</text>
+<text x="654.4" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="679.6" y="47" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">open.</text>
+<text x="730.0" y="47" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">Your</text>
+<text x="772.0" y="47" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">mode</text>
+<text x="814.0" y="47" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">stops</text>
+<text x="864.4" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">at</text>
+<text x="889.6" y="47" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="906.4" y="47" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">ready</text>
+<text x="956.8" y="47" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">PR,</text>
+<text x="990.4" y="47" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">so</text>
+<text x="24.4" y="65" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">say</text>
+<text x="58.0" y="65" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">if</text>
+<text x="83.2" y="65" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">you</text>
+<text x="116.8" y="65" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">want</text>
+<text x="158.8" y="65" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">me</text>
+<text x="184.0" y="65" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">to</text>
+<text x="209.2" y="65" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">continue.</text>
+<text x="24.4" y="101" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">stop:</text>
+<text x="74.8" y="101" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">pr</text>
+<text x="116.8" y="101" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">rigor:</text>
+<text x="175.6" y="101" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">standard</text>
+<text x="268.0" y="101" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">tracking:</text>
+<text x="352.0" y="101" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">local</text>
+<text x="41.2" y="119" fill="#d6dde6" textLength="109.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">issueRequired</text>
+<text x="158.8" y="119" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">on</text>
+<text x="41.2" y="137" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">verify</text>
+<text x="158.8" y="137" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">on</text>
+<text x="41.2" y="155" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">review</text>
+<text x="158.8" y="155" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">auto</text>
+<text x="209.2" y="155" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="226.0" y="155" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">off:</text>
+<text x="268.0" y="155" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">you</text>
+<text x="301.6" y="155" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">review</text>
+<text x="360.4" y="155" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">the</text>
+<text x="394.0" y="155" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">PR</text>
+<text x="41.2" y="173" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">leanCode</text>
+<text x="158.8" y="173" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">warn</text>
+<text x="24.4" y="191" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">This</text>
+<text x="66.4" y="191" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">session</text>
+<text x="133.6" y="191" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">is</text>
+<text x="158.8" y="191" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">not</text>
+<text x="192.4" y="191" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">sandboxed:</text>
+<text x="284.8" y="191" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">commands</text>
+<text x="360.4" y="191" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">run</text>
+<text x="394.0" y="191" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">as</text>
+<text x="419.2" y="191" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">you</text>
+<text x="452.8" y="191" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">on</text>
+<text x="478.0" y="191" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">this</text>
+<text x="520.0" y="191" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">machine.</text>
+<text x="595.6" y="191" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">Only</text>
+<text x="637.6" y="191" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">`pitcrew</text>
+<text x="713.2" y="191" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">run`</text>
+<text x="755.2" y="191" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">uses</text>
+<text x="797.2" y="191" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">the</text>
+<text x="830.8" y="191" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">sandbox</text>
+<text x="24.4" y="209" fill="#d6dde6" textLength="142.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">(runner.sandbox).</text>
+<text x="16.0" y="245" fill="#58a6ff" textLength="1008.0" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<rect x="16.0" y="250" width="8.4" height="18" fill="#d6dde6"/>
+<text x="16.0" y="281" fill="#58a6ff" textLength="1008.0" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="16.0" y="299" fill="#d6dde6" textLength="117.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">/tmp/demo-shop</text>
+<text x="142.0" y="299" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">(main)</text>
+<text x="200.8" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="217.6" y="299" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">demo-shop:</text>
+<text x="310.0" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">npm</text>
+<text x="343.6" y="299" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">test</text>
+<text x="385.6" y="299" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">fails.</text>
+<text x="444.4" y="299" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">Start</text>
+<text x="494.8" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">one</text>
+<text x="528.4" y="299" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">scout</text>
+<text x="654.4" y="299" fill="#d6dde6" textLength="126.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">(claude-bridge)</text>
+<text x="788.8" y="299" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">role/lead</text>
+<text x="872.8" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="889.6" y="299" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">sonnet-5-5</text>
+<text x="982.0" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="998.8" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">low</text>
+<text x="16.0" y="317" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">ctx</text>
+<text x="49.6" y="317" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">1.1%</text>
+<text x="91.6" y="317" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">11k/1M</text>
+<text x="150.4" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="167.2" y="317" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">CH</text>
+<text x="192.4" y="317" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">98%</text>
+<text x="226.0" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="242.8" y="317" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↑101k</text>
+<text x="293.2" y="317" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↓1.6k</text>
+<text x="343.6" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="360.4" y="317" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">≈$0.04</text>
+<text x="620.8" y="317" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">5h</text>
+<text x="646.0" y="317" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">9%</text>
+<text x="671.2" y="317" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻1h56</text>
+<text x="721.6" y="317" fill="#3fb950" textLength="33.6" lengthAdjust="spacingAndGlyphs">0.1×</text>
+<text x="763.6" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="780.4" y="317" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">7d</text>
+<text x="805.6" y="317" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">18%</text>
+<text x="839.2" y="317" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻2d</text>
+<text x="872.8" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="889.6" y="317" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">guard</text>
+<text x="940.0" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="956.8" y="317" fill="#d29922" textLength="50.4" lengthAdjust="spacingAndGlyphs">verify</text>
+<text x="1015.6" y="317" fill="#d29922" textLength="8.4" lengthAdjust="spacingAndGlyphs">●</text>
+<text x="16.0" y="335" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">pr</text>
+<text x="41.2" y="335" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="58.0" y="335" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs">standard</text>
+<text x="133.6" y="335" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs">profile:demo</text>
+</g></svg>

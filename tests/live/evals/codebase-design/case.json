@@ -1,0 +1,12 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Where does the structure of the orders code hurt, and what would you change? Do not change code yet."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "codebase-design/SKILL\\.md" },
+    { "name": "names the pass-through repository wrapper", "text": "repo(sitory)?\\.js|pass.?through|shallow" },
+    { "name": "names the one-line pipeline modules", "text": "validate|price|intake|pipeline" },
+    { "name": "changes no code", "command": "git status --porcelain", "expect": "^$" }
+  ]
+}

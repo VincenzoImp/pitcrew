@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "plan"],
+  "prompts": ["/skill:spec-review plans/session-expiry.md"],
+  "timeoutMin": 90,
+  "checks": [
+    { "name": "starts fresh reviewer agents", "tool": "agent", "args": "\"agent\":\\s*\"reviewer\"" },
+    { "name": "zoom-out is the first reviewer started", "transcript": "^(?:(?!call agent)[\\s\\S])*call agent [^\\n]*(zoom|skeptical)" },
+    { "name": "finds the planted contradiction (30-minute idle timeout against no idle timeout)", "transcript": "(30.?min|idle)[\\s\\S]*(24.?h|no idle)|(24.?h|no idle)[\\s\\S]*(30.?min|idle)" },
+    { "name": "reports reviewer status and decisions", "transcript": "(fix|contest|escalate)" }
+  ]
+}

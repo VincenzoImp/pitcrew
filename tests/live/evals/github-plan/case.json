@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "github",
+  "args": ["--stop", "plan"],
+  "prompts": ["We agreed this plan: 1) parse a --name flag; 2) print 'hello <name>', blocked by 1; 3) document it in the README, blocked by 2. This repo has no GitHub remote yet, so do not run any gh command: tell me which GitHub objects you would create for the tracking mode and the exact gh commands, and which issue is the frontier."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "github/SKILL\\.md" },
+    { "name": "a milestone for the plan", "text": "milestone" },
+    { "name": "blocking edges as dependencies", "text": "blocked.?by" },
+    { "name": "the frontier is the first issue", "text": "frontier[\\s\\S]{0,200}(1|--name|parse)" },
+    { "name": "runs no gh command", "tool": "bash", "args": "\\bgh (issue|api|project|pr)", "not": true }
+  ]
+}

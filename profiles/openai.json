@@ -1,0 +1,7 @@
+{
+  "lead": { "model": "openai/gpt-6.1-sol", "thinking": "high" },
+  "worker": { "model": "openai/gpt-6.1-sol", "thinking": "medium" },
+  "scout": { "model": "openai/gpt-6.1-sol", "thinking": "low" },
+  "reviewer": { "model": "openai/gpt-6.1-sol", "thinking": "high" },
+  "second": { "model": "openai/gpt-6.1-terra", "thinking": "high" }
+}

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="446" viewBox="0 0 1040 446" role="img">
+<title>pi + pitcrew: a session and its footer</title>
+<rect width="100%" height="100%" rx="8" fill="#0d1117"/>
+<circle cx="18" cy="16" r="5" fill="#ff5f57"/><circle cx="34" cy="16" r="5" fill="#febc2e"/><circle cx="50" cy="16" r="5" fill="#28c840"/>
+<text x="520" y="20" fill="#8b949e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" text-anchor="middle">pi + pitcrew: a session and its footer</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" xml:space="preserve">
+<text x="24.4" y="47" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">ℹ</text>
+<text x="41.2" y="47" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">fail</text>
+<text x="83.2" y="47" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">0</text>
+<text x="32.8" y="65" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">M</text>
+<text x="49.6" y="65" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">cart.js</text>
+<text x="32.8" y="83" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">M</text>
+<text x="49.6" y="83" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">cart.test.js</text>
+<text x="24.4" y="119" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">Took</text>
+<text x="66.4" y="119" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">0.1s</text>
+<text x="24.4" y="173" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="41.2" y="173" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">ran</text>
+<text x="74.8" y="173" fill="#bc8cff" textLength="25.2" lengthAdjust="spacingAndGlyphs">npm</text>
+<text x="108.4" y="173" fill="#bc8cff" textLength="33.6" lengthAdjust="spacingAndGlyphs">test</text>
+<text x="150.4" y="173" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">again</text>
+<text x="200.8" y="173" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">after</text>
+<text x="251.2" y="173" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">the</text>
+<text x="284.8" y="173" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">last</text>
+<text x="326.8" y="173" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">change,</text>
+<text x="394.0" y="173" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="427.6" y="173" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">it</text>
+<text x="452.8" y="173" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">passes:</text>
+<text x="520.0" y="173" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="536.8" y="173" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">of</text>
+<text x="562.0" y="173" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="578.8" y="173" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">tests,</text>
+<text x="637.6" y="173" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
+<text x="654.4" y="173" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">failures.</text>
+<text x="24.4" y="209" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="41.2" y="209" fill="#bc8cff" textLength="42.0" lengthAdjust="spacingAndGlyphs">total</text>
+<text x="91.6" y="209" fill="#bc8cff" textLength="33.6" lengthAdjust="spacingAndGlyphs">adds</text>
+<text x="133.6" y="209" fill="#bc8cff" textLength="42.0" lengthAdjust="spacingAndGlyphs">price</text>
+<text x="184.0" y="209" fill="#bc8cff" textLength="42.0" lengthAdjust="spacingAndGlyphs">times</text>
+<text x="234.4" y="209" fill="#bc8cff" textLength="67.2" lengthAdjust="spacingAndGlyphs">quantity</text>
+<text x="310.0" y="209" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">passes.</text>
+<text x="24.4" y="227" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="41.2" y="227" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="58.0" y="227" fill="#bc8cff" textLength="67.2" lengthAdjust="spacingAndGlyphs">discount</text>
+<text x="133.6" y="227" fill="#bc8cff" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="158.8" y="227" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="175.6" y="227" fill="#bc8cff" textLength="84.0" lengthAdjust="spacingAndGlyphs">percentage</text>
+<text x="268.0" y="227" fill="#bc8cff" textLength="16.8" lengthAdjust="spacingAndGlyphs">of</text>
+<text x="293.2" y="227" fill="#bc8cff" textLength="25.2" lengthAdjust="spacingAndGlyphs">the</text>
+<text x="326.8" y="227" fill="#bc8cff" textLength="25.2" lengthAdjust="spacingAndGlyphs">sum</text>
+<text x="360.4" y="227" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">passes.</text>
+<text x="24.4" y="245" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="41.2" y="245" fill="#bc8cff" textLength="16.8" lengthAdjust="spacingAndGlyphs">an</text>
+<text x="66.4" y="245" fill="#bc8cff" textLength="42.0" lengthAdjust="spacingAndGlyphs">empty</text>
+<text x="116.8" y="245" fill="#bc8cff" textLength="33.6" lengthAdjust="spacingAndGlyphs">cart</text>
+<text x="158.8" y="245" fill="#bc8cff" textLength="50.4" lengthAdjust="spacingAndGlyphs">totals</text>
+<text x="217.6" y="245" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
+<text x="234.4" y="245" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">passes.</text>
+<text x="24.4" y="281" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">Only</text>
+<text x="66.4" y="281" fill="#bc8cff" textLength="58.8" lengthAdjust="spacingAndGlyphs">cart.js</text>
+<text x="133.6" y="281" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="167.2" y="281" fill="#bc8cff" textLength="100.8" lengthAdjust="spacingAndGlyphs">cart.test.js</text>
+<text x="276.4" y="281" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">are</text>
+<text x="310.0" y="281" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">modified.</text>
+<text x="394.0" y="281" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">Nothing</text>
+<text x="461.2" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="486.4" y="281" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">committed</text>
+<text x="570.4" y="281" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="604.0" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">no</text>
+<text x="629.2" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">PR</text>
+<text x="654.4" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="679.6" y="281" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">open.</text>
+<text x="730.0" y="281" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">Your</text>
+<text x="772.0" y="281" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">mode</text>
+<text x="814.0" y="281" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">stops</text>
+<text x="864.4" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">at</text>
+<text x="889.6" y="281" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="906.4" y="281" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">ready</text>
+<text x="956.8" y="281" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">PR,</text>
+<text x="990.4" y="281" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">so</text>
+<text x="24.4" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">say</text>
+<text x="58.0" y="299" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">if</text>
+<text x="83.2" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">you</text>
+<text x="116.8" y="299" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">want</text>
+<text x="158.8" y="299" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">me</text>
+<text x="184.0" y="299" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">to</text>
+<text x="209.2" y="299" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">continue.</text>
+<text x="16.0" y="335" fill="#58a6ff" textLength="1008.0" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<rect x="16.0" y="340" width="8.4" height="18" fill="#d6dde6"/>
+<text x="16.0" y="371" fill="#58a6ff" textLength="1008.0" lengthAdjust="spacingAndGlyphs">────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+<text x="16.0" y="389" fill="#d6dde6" textLength="117.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">/tmp/demo-shop</text>
+<text x="142.0" y="389" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">(main)</text>
+<text x="200.8" y="389" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="217.6" y="389" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">demo-shop:</text>
+<text x="310.0" y="389" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">npm</text>
+<text x="343.6" y="389" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">test</text>
+<text x="385.6" y="389" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">fails.</text>
+<text x="444.4" y="389" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">Start</text>
+<text x="494.8" y="389" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">one</text>
+<text x="528.4" y="389" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">scout</text>
+<text x="654.4" y="389" fill="#d6dde6" textLength="126.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">(claude-bridge)</text>
+<text x="788.8" y="389" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">role/lead</text>
+<text x="872.8" y="389" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="889.6" y="389" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">sonnet-5-5</text>
+<text x="982.0" y="389" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="998.8" y="389" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">low</text>
+<text x="16.0" y="407" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">ctx</text>
+<text x="49.6" y="407" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">1.1%</text>
+<text x="91.6" y="407" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">11k/1M</text>
+<text x="150.4" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="167.2" y="407" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">CH</text>
+<text x="192.4" y="407" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">98%</text>
+<text x="226.0" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="242.8" y="407" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↑101k</text>
+<text x="293.2" y="407" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↓1.6k</text>
+<text x="343.6" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="360.4" y="407" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">≈$0.04</text>
+<text x="620.8" y="407" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">5h</text>
+<text x="646.0" y="407" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">9%</text>
+<text x="671.2" y="407" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻1h56</text>
+<text x="721.6" y="407" fill="#3fb950" textLength="33.6" lengthAdjust="spacingAndGlyphs">0.1×</text>
+<text x="763.6" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="780.4" y="407" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">7d</text>
+<text x="805.6" y="407" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">18%</text>
+<text x="839.2" y="407" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻2d</text>
+<text x="872.8" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="889.6" y="407" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">guard</text>
+<text x="940.0" y="407" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="956.8" y="407" fill="#d29922" textLength="50.4" lengthAdjust="spacingAndGlyphs">verify</text>
+<text x="1015.6" y="407" fill="#d29922" textLength="8.4" lengthAdjust="spacingAndGlyphs">●</text>
+<text x="16.0" y="425" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">pr</text>
+<text x="41.2" y="425" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="58.0" y="425" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs">standard</text>
+<text x="133.6" y="425" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs">profile:demo</text>
+</g></svg>

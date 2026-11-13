@@ -1,0 +1,86 @@
+{
+  "name": "@vincenzoimp/pitcrew",
+  "version": "0.1.0",
+  "description": "A crew for the pi coding agent: roles instead of model names, a per-session mode, child agents you can watch and steer, a guard, a verify gate, skills, and an unattended runner.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "coding-agent",
+    "ai",
+    "agents",
+    "subagents",
+    "skills",
+    "cli"
+  ],
+  "homepage": "https://github.com/VincenzoImp/pitcrew#readme",
+  "bugs": {
+    "url": "https://github.com/VincenzoImp/pitcrew/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincenzoImp/pitcrew.git"
+  },
+  "license": "MIT",
+  "author": "Vincenzo Imperati",
+  "type": "module",
+  "bin": {
+    "pitcrew": "bin/pitcrew"
+  },
+  "files": [
+    "AGENTS.global.md",
+    "CHANGELOG.md",
+    "THIRD_PARTY_NOTICES.md",
+    "UPSTREAM.md",
+    "agents/",
+    "bin/",
+    "box/",
+    "config/",
+    "extensions/",
+    "lib/",
+    "profiles/",
+    "skills/"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/roles/index.ts",
+      "./extensions/rules/index.ts",
+      "./extensions/mode/index.ts",
+      "./extensions/guard/index.ts",
+      "./extensions/verify-gate/index.ts",
+      "./extensions/status/index.ts",
+      "./extensions/context/index.ts",
+      "./extensions/handoff/index.ts",
+      "./extensions/web/index.ts",
+      "./extensions/agent/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ],
+    "prompts": [],
+    "image": "https://raw.githubusercontent.com/VincenzoImp/pitcrew/main/docs/assets/screen-agents.png"
+  },
+  "scripts": {
+    "check": "node --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.2"
+  },
+  "dependencies": {
+    "@mozilla/readability": "0.6.0",
+    "@playwright/cli": "0.1.24",
+    "linkedom": "0.18.15",
+    "turndown": "7.2.5",
+    "undici": "8.12.4",
+    "unpdf": "2.1.0"
+  }
+}

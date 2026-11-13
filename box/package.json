@@ -1,0 +1,9 @@
+{
+  "name": "pitcrew-box-image",
+  "private": true,
+  "description": "Pinned packages installed into the sandbox image (npm ci --ignore-scripts). Versions as in UPSTREAM.md.",
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "pi-claude-bridge": "0.12.0"
+  }
+}

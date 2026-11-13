@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Run the harness's pinned playwright-cli with headless Chromium, its files outside the repo.
+# Usage: browser -s=<session> <command> [args]     help: browser --help [command]
+# Files (snapshots, console logs, screenshots, relative --filename paths) go to
+# /tmp/pitcrew/browser/<session>/, because the command runs in that folder.
+# The browser binary is installed once with: browser install-browser chromium
+set -euo pipefail
+here=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+# The package's own node_modules (a checkout), or a node_modules above it (an npm install).
+cli=
+d=$(cd "$here/../../.." && pwd)
+while [ "$d" != / ]; do
+  if [ -x "$d/node_modules/.bin/playwright-cli" ]; then cli="$d/node_modules/.bin/playwright-cli"; break; fi
+  d=$(dirname "$d")
+done
+if [ -z "$cli" ]; then
+  echo "playwright-cli is missing: run 'npm ci --ignore-scripts' in $(cd "$here/../../.." && pwd)" >&2
+  exit 1
+fi
+session=default
+for arg in "$@"; do
+  case $arg in -s=*) session=${arg#-s=} ;; esac
+done
+session=${session//[^A-Za-z0-9._-]/_}
+out=${PITCREW_BROWSER_DIR:-/tmp/pitcrew/browser}/$session
+mkdir -p "$out"
+chmod 700 "$out"
+export PLAYWRIGHT_MCP_BROWSER=${PLAYWRIGHT_MCP_BROWSER:-chromium}
+export PLAYWRIGHT_MCP_OUTPUT_DIR=$out
+cd "$out"
+exec "$cli" "$@"

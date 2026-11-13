@@ -1,0 +1,38 @@
+name: Bug
+description: Something does not work as the docs say
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw. Paste the exact message.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. pi --profile local
+        2. /mode stop merge
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Output of `pi --version`, the pitcrew version (`pi list`), `node --version`, and your OS
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Profile and providers
+      description: The profile (`/profile`) and how you reach the models (subscription, API key, local server, Claude bridge). No keys or tokens.
+  - type: textarea
+    id: checkup
+    attributes:
+      label: Output of `pitcrew init --dry-run`
+      render: text

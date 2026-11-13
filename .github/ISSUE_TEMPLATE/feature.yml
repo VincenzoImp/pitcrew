@@ -1,0 +1,18 @@
+name: Feature
+description: Propose a change or an addition
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use
+    attributes:
+      label: The use
+      description: The real work this is for, and what goes wrong or costs too much today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The smallest change that serves the use. Say if you checked docs/decisions.md (ideas already considered and left out).
+    validations:
+      required: true

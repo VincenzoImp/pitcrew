@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="698" viewBox="0 0 1040 698" role="img">
+<title>/agents: one child's live transcript, ready to steer</title>
+<rect width="100%" height="100%" rx="8" fill="#0d1117"/>
+<circle cx="18" cy="16" r="5" fill="#ff5f57"/><circle cx="34" cy="16" r="5" fill="#febc2e"/><circle cx="50" cy="16" r="5" fill="#28c840"/>
+<text x="520" y="20" fill="#8b949e" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" text-anchor="middle">/agents: one child's live transcript, ready to steer</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" xml:space="preserve">
+<text x="24.4" y="47" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">ℹ</text>
+<text x="41.2" y="47" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">tests</text>
+<text x="91.6" y="47" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">2</text>
+<text x="24.4" y="65" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">ℹ</text>
+<text x="41.2" y="65" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">pass</text>
+<text x="83.2" y="65" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">2</text>
+<text x="24.4" y="83" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">ℹ</text>
+<text x="41.2" y="83" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">fail</text>
+<text x="83.2" y="83" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">0</text>
+<text x="32.8" y="101" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">cart</text>
+<text x="66.4" y="101" fill="#bc8cff" textLength="16.8" lengthAdjust="spacingAndGlyphs">──</text>
+<text x="91.6" y="101" fill="#bc8cff" textLength="67.2" lengthAdjust="spacingAndGlyphs">worker-1</text>
+<text x="167.2" y="101" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="184.0" y="101" fill="#bc8cff" textLength="50.4" lengthAdjust="spacingAndGlyphs">worker</text>
+<text x="242.8" y="101" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="259.6" y="101" fill="#bc8cff" textLength="142.8" lengthAdjust="spacingAndGlyphs">claude-sonnet-5-5</text>
+<text x="410.8" y="101" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="427.6" y="101" fill="#bc8cff" textLength="58.8" lengthAdjust="spacingAndGlyphs">running</text>
+<text x="494.8" y="101" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="511.6" y="101" fill="#bc8cff" textLength="16.8" lengthAdjust="spacingAndGlyphs">4t</text>
+<text x="536.8" y="101" fill="#bc8cff" textLength="33.6" lengthAdjust="spacingAndGlyphs">↑31k</text>
+<text x="578.8" y="101" fill="#bc8cff" textLength="33.6" lengthAdjust="spacingAndGlyphs">↓629</text>
+<text x="620.8" y="101" fill="#bc8cff" textLength="327.6" lengthAdjust="spacingAndGlyphs">───────────────────────────────────────</text>
+<text x="948.4" y="101" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">...</text>
+<text x="32.8" y="119" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">1</text>
+<text x="49.6" y="119" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">fi</text>
+<text x="74.8" y="137" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="91.6" y="137" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">added</text>
+<text x="142.0" y="137" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">one</text>
+<text x="175.6" y="137" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">test</text>
+<text x="217.6" y="137" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">to</text>
+<text x="242.8" y="137" fill="#d6dde6" textLength="117.6" lengthAdjust="spacingAndGlyphs">`cart.test.js`</text>
+<text x="368.8" y="137" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">that</text>
+<text x="410.8" y="137" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">checks</text>
+<text x="469.6" y="137" fill="#d6dde6" textLength="92.4" lengthAdjust="spacingAndGlyphs">`total([])`</text>
+<text x="570.4" y="137" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">equals</text>
+<text x="629.2" y="137" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">0.</text>
+<text x="654.4" y="137" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">`npm</text>
+<text x="696.4" y="137" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">test`</text>
+<text x="746.8" y="137" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">passed:</text>
+<text x="814.0" y="137" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="830.8" y="137" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">tests,</text>
+<text x="889.6" y="137" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">3</text>
+<text x="906.4" y="137" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">pass,</text>
+<text x="956.8" y="137" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">0</text>
+<text x="24.4" y="155" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">Took</text>
+<text x="74.8" y="155" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">fail.</text>
+<text x="125.2" y="155" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="142.0" y="155" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">changed</text>
+<text x="209.2" y="155" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">no</text>
+<text x="234.4" y="155" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">other</text>
+<text x="284.8" y="155" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">file</text>
+<text x="326.8" y="155" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="360.4" y="155" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">did</text>
+<text x="394.0" y="155" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">not</text>
+<text x="427.6" y="155" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">commit.</text>
+<text x="74.8" y="191" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">```diff</text>
+<text x="24.4" y="209" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="41.2" y="209" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">re-</text>
+<text x="74.8" y="209" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">@@</text>
+<text x="100.0" y="209" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">-9,3</text>
+<text x="142.0" y="209" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">+9,7</text>
+<text x="184.0" y="209" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">@@</text>
+<text x="209.2" y="209" fill="#d6dde6" textLength="92.4" lengthAdjust="spacingAndGlyphs">test("total</text>
+<text x="310.0" y="209" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">adds</text>
+<text x="352.0" y="209" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">price</text>
+<text x="402.4" y="209" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">times</text>
+<text x="452.8" y="209" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs">quantity",</text>
+<text x="545.2" y="209" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">()</text>
+<text x="570.4" y="209" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">=&gt;</text>
+<text x="595.6" y="209" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">{</text>
+<text x="83.2" y="227" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">test("a</text>
+<text x="150.4" y="227" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs">discount</text>
+<text x="226.0" y="227" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">is</text>
+<text x="251.2" y="227" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="268.0" y="227" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs">percentage</text>
+<text x="360.4" y="227" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">of</text>
+<text x="385.6" y="227" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">the</text>
+<text x="419.2" y="227" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">sum",</text>
+<text x="469.6" y="227" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">()</text>
+<text x="494.8" y="227" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">=&gt;</text>
+<text x="520.0" y="227" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">{</text>
+<text x="24.4" y="245" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="41.2" y="245" fill="#bc8cff" textLength="25.2" lengthAdjust="spacingAndGlyphs">tot</text>
+<text x="100.0" y="245" fill="#d6dde6" textLength="176.4" lengthAdjust="spacingAndGlyphs">assert.equal(total([{</text>
+<text x="284.8" y="245" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">price:</text>
+<text x="343.6" y="245" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">40,</text>
+<text x="377.2" y="245" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">quantity:</text>
+<text x="461.2" y="245" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">2</text>
+<text x="478.0" y="245" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">}],</text>
+<text x="511.6" y="245" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">10),</text>
+<text x="553.6" y="245" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">72);</text>
+<text x="24.4" y="263" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="41.2" y="263" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">a</text>
+<text x="58.0" y="263" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">d</text>
+<text x="83.2" y="263" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">});</text>
+<text x="74.8" y="281" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">+</text>
+<text x="24.4" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">The</text>
+<text x="58.0" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">d</text>
+<text x="74.8" y="299" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs">+test("an</text>
+<text x="158.8" y="299" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">empty</text>
+<text x="209.2" y="299" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">cart</text>
+<text x="251.2" y="299" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">totals</text>
+<text x="310.0" y="299" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">0",</text>
+<text x="343.6" y="299" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">()</text>
+<text x="368.8" y="299" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">=&gt;</text>
+<text x="394.0" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">{</text>
+<text x="973.6" y="299" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">u</text>
+<text x="24.4" y="317" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">want</text>
+<text x="74.8" y="317" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">+</text>
+<text x="100.0" y="317" fill="#d6dde6" textLength="193.2" lengthAdjust="spacingAndGlyphs">assert.equal(total([]),</text>
+<text x="301.6" y="317" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">0);</text>
+<text x="74.8" y="335" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">+});</text>
+<text x="74.8" y="353" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">```</text>
+<text x="24.4" y="371" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">Start</text>
+<text x="74.8" y="389" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="91.6" y="389" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">ran</text>
+<text x="125.2" y="389" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">`npm</text>
+<text x="167.2" y="389" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">test`</text>
+<text x="217.6" y="389" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">and</text>
+<text x="251.2" y="389" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">it</text>
+<text x="276.4" y="389" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">exited</text>
+<text x="335.2" y="389" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">0.</text>
+<text x="360.4" y="389" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">I</text>
+<text x="377.2" y="389" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs">have</text>
+<text x="419.2" y="389" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">no</text>
+<text x="444.4" y="389" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs">known</text>
+<text x="494.8" y="389" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">risks.</text>
+<text x="74.8" y="425" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs">```json</text>
+<text x="24.4" y="443" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" font-weight="bold">agent</text>
+<text x="74.8" y="443" fill="#d6dde6" textLength="806.4" lengthAdjust="spacingAndGlyphs">{"status":"done","tests":3,"pass":3,"fail":0,"files_changed":["cart.test.js"],"committed":false}</text>
+<text x="24.4" y="461" fill="#d29922" textLength="8.4" lengthAdjust="spacingAndGlyphs">⏳</text>
+<text x="41.2" y="461" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" font-weight="bold">wo</text>
+<text x="66.4" y="461" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">```</text>
+<text x="41.2" y="479" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="58.0" y="479" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">b</text>
+<text x="74.8" y="479" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="91.6" y="479" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">bash</text>
+<text x="133.6" y="479" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">cd</text>
+<text x="158.8" y="479" fill="#d6dde6" textLength="117.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">/tmp/demo-shop</text>
+<text x="284.8" y="479" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">&amp;&amp;</text>
+<text x="310.0" y="479" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">npm</text>
+<text x="343.6" y="479" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">test</text>
+<text x="385.6" y="479" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">2&gt;&amp;1</text>
+<text x="427.6" y="479" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">|</text>
+<text x="444.4" y="479" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">grep</text>
+<text x="486.4" y="479" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">-E</text>
+<text x="511.6" y="479" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">"^(✔|✖|ℹ</text>
+<text x="587.2" y="479" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">(tests…</text>
+<text x="41.2" y="497" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="58.0" y="497" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">b</text>
+<text x="91.6" y="497" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">✔</text>
+<text x="108.4" y="497" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">total</text>
+<text x="158.8" y="497" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">adds</text>
+<text x="200.8" y="497" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">price</text>
+<text x="251.2" y="497" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">times</text>
+<text x="301.6" y="497" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">quantity</text>
+<text x="377.2" y="497" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">(0.426908ms)</text>
+<text x="41.2" y="515" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="58.0" y="515" fill="#bc8cff" textLength="8.4" lengthAdjust="spacingAndGlyphs">b</text>
+<text x="91.6" y="515" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">✔</text>
+<text x="108.4" y="515" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">a</text>
+<text x="125.2" y="515" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">discount</text>
+<text x="200.8" y="515" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">is</text>
+<text x="226.0" y="515" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">a</text>
+<text x="242.8" y="515" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">percentage</text>
+<text x="335.2" y="515" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">of</text>
+<text x="360.4" y="515" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">the</text>
+<text x="394.0" y="515" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">sum</text>
+<text x="427.6" y="515" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">(0.072575ms)</text>
+<text x="24.4" y="533" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">(Ctrl</text>
+<text x="91.6" y="533" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">✔</text>
+<text x="108.4" y="533" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">an</text>
+<text x="133.6" y="533" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">empty</text>
+<text x="184.0" y="533" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">cart</text>
+<text x="226.0" y="533" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">totals</text>
+<text x="284.8" y="533" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">0</text>
+<text x="301.6" y="533" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">(0.063077ms)</text>
+<text x="16.0" y="587" fill="#58a6ff" textLength="16.8" lengthAdjust="spacingAndGlyphs">──</text>
+<text x="41.2" y="587" fill="#58a6ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">⠦</text>
+<text x="58.0" y="587" fill="#58a6ff" textLength="8.4" lengthAdjust="spacingAndGlyphs">W</text>
+<text x="74.8" y="587" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">steer:</text>
+<text x="973.6" y="587" fill="#58a6ff" textLength="50.4" lengthAdjust="spacingAndGlyphs">──────</text>
+<rect x="16.0" y="592" width="8.4" height="18" fill="#d6dde6"/>
+<text x="74.8" y="605" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">&gt;</text>
+<rect x="91.6" y="592" width="8.4" height="18" fill="#d6dde6"/>
+<text x="16.0" y="623" fill="#58a6ff" textLength="50.4" lengthAdjust="spacingAndGlyphs">──────</text>
+<text x="74.8" y="623" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">Enter</text>
+<text x="125.2" y="623" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">steer</text>
+<text x="175.6" y="623" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="192.4" y="623" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">Ctrl+X</text>
+<text x="251.2" y="623" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">Ctrl+X</text>
+<text x="310.0" y="623" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">stop</text>
+<text x="352.0" y="623" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="368.8" y="623" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">PgUp/PgDn</text>
+<text x="452.8" y="623" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">scroll</text>
+<text x="511.6" y="623" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="528.4" y="623" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">Esc</text>
+<text x="562.0" y="623" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">back</text>
+<text x="973.6" y="623" fill="#58a6ff" textLength="50.4" lengthAdjust="spacingAndGlyphs">──────</text>
+<text x="16.0" y="641" fill="#d6dde6" textLength="117.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">/tmp/demo-shop</text>
+<text x="142.0" y="641" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">(main)</text>
+<text x="200.8" y="641" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="217.6" y="641" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">demo-shop:</text>
+<text x="310.0" y="641" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">npm</text>
+<text x="343.6" y="641" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">test</text>
+<text x="385.6" y="641" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">fails.</text>
+<text x="444.4" y="641" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">Start</text>
+<text x="494.8" y="641" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">one</text>
+<text x="528.4" y="641" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">scout</text>
+<text x="654.4" y="641" fill="#d6dde6" textLength="126.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">(claude-bridge)</text>
+<text x="788.8" y="641" fill="#d6dde6" textLength="75.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">role/lead</text>
+<text x="872.8" y="641" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">→</text>
+<text x="889.6" y="641" fill="#d6dde6" textLength="84.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">sonnet-5-5</text>
+<text x="982.0" y="641" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">•</text>
+<text x="998.8" y="641" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">low</text>
+<text x="16.0" y="659" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">ctx</text>
+<text x="49.6" y="659" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">1.0%</text>
+<text x="91.6" y="659" fill="#d6dde6" textLength="58.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">9.6k/1M</text>
+<text x="158.8" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="175.6" y="659" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs" opacity="0.6">CH</text>
+<text x="200.8" y="659" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">98%</text>
+<text x="234.4" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="251.2" y="659" fill="#d6dde6" textLength="33.6" lengthAdjust="spacingAndGlyphs" opacity="0.6">↑61k</text>
+<text x="293.2" y="659" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↓1.1k</text>
+<text x="343.6" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="360.4" y="659" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">≈$0.03</text>
+<text x="620.8" y="659" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">5h</text>
+<text x="646.0" y="659" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">9%</text>
+<text x="671.2" y="659" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻1h56</text>
+<text x="721.6" y="659" fill="#3fb950" textLength="33.6" lengthAdjust="spacingAndGlyphs">0.1×</text>
+<text x="763.6" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="780.4" y="659" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">7d</text>
+<text x="805.6" y="659" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs">18%</text>
+<text x="839.2" y="659" fill="#d6dde6" textLength="25.2" lengthAdjust="spacingAndGlyphs" opacity="0.6">↻2d</text>
+<text x="872.8" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="889.6" y="659" fill="#d6dde6" textLength="42.0" lengthAdjust="spacingAndGlyphs" opacity="0.6">guard</text>
+<text x="940.0" y="659" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs" opacity="0.6">·</text>
+<text x="956.8" y="659" fill="#d29922" textLength="50.4" lengthAdjust="spacingAndGlyphs">verify</text>
+<text x="1015.6" y="659" fill="#d29922" textLength="8.4" lengthAdjust="spacingAndGlyphs">●</text>
+<text x="16.0" y="677" fill="#d6dde6" textLength="50.4" lengthAdjust="spacingAndGlyphs">agents</text>
+<text x="74.8" y="677" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">1▶</text>
+<text x="100.0" y="677" fill="#d6dde6" textLength="16.8" lengthAdjust="spacingAndGlyphs">pr</text>
+<text x="125.2" y="677" fill="#d6dde6" textLength="8.4" lengthAdjust="spacingAndGlyphs">·</text>
+<text x="142.0" y="677" fill="#d6dde6" textLength="67.2" lengthAdjust="spacingAndGlyphs">standard</text>
+<text x="217.6" y="677" fill="#d6dde6" textLength="100.8" lengthAdjust="spacingAndGlyphs">profile:demo</text>
+</g></svg>

@@ -1,0 +1,32 @@
+{
+ "capturedAt": 1794390392215,
+ "source": "2026-11-11, role/second, provider_stream_event",
+ "data": {
+  "type": "codex.rate_limits",
+  "plan_type": "plus",
+  "rate_limits": {
+   "allowed": false,
+   "limit_reached": true,
+   "primary": {
+    "used_percent": 0,
+    "window_minutes": 300,
+    "reset_after_seconds": 18000,
+    "reset_at": 1794408392
+   },
+   "secondary": {
+    "used_percent": 100,
+    "window_minutes": 10080,
+    "reset_after_seconds": 434588,
+    "reset_at": 1794824980
+   }
+  },
+  "code_review_rate_limits": null,
+  "additional_rate_limits": null,
+  "credits": {
+   "has_credits": true,
+   "unlimited": false,
+   "balance": "7853.7971450000"
+  },
+  "promo": null
+ }
+}

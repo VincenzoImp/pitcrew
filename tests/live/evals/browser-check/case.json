@@ -1,0 +1,11 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["The page index.html shows nothing when opened. Check it in a real browser and tell me why; do not fix it."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "browser-check/SKILL\\.md" },
+    { "name": "opens the page in a headless browser", "tool": "bash", "args": "playwright|chrom|browser" },
+    { "name": "finds the script error", "text": "renderLst|not defined|ReferenceError" }
+  ]
+}

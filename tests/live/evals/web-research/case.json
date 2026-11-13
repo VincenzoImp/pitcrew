@@ -1,0 +1,13 @@
+{
+  "setup": "setup.sh",
+  "tracking": "none",
+  "args": ["--stop", "local"],
+  "prompts": ["Does turndown, at the version this project uses, turn a <br> into two trailing spaces and a newline by default, and which option changes that? Cite your source."],
+  "checks": [
+    { "name": "loads the skill", "tool": "read", "args": "web-research/SKILL\\.md" },
+    { "name": "finds the installed version first", "tool": "bash|read", "args": "node_modules/turndown" },
+    { "name": "answers yes with the option", "text": "br\\b[\\s\\S]*(option|`br`)" },
+    { "name": "cites the installed source or the docs", "text": "(node_modules/turndown|github\\.com/mixmark-io|turndown[^\\s]*:\\d+)" },
+    { "name": "no web search needed for an installed fact", "tool": "web_search", "not": true }
+  ]
+}

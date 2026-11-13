@@ -1,0 +1,7 @@
+{
+  "lead": { "model": "anthropic/claude-opus-5-5", "thinking": "high" },
+  "worker": { "model": "anthropic/claude-opus-5-5", "thinking": "medium" },
+  "scout": { "model": "anthropic/claude-sonnet-5-5", "thinking": "low" },
+  "reviewer": { "model": "anthropic/claude-opus-5-5", "thinking": "high" },
+  "second": { "model": "anthropic/claude-sonnet-5-5", "thinking": "high" }
+}
