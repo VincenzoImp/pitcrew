@@ -54,4 +54,4 @@ jobs:
       - name: GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" --verify-tag --title "$GITHUB_REF_NAME" --notes-file "$RUNNER_TEMP/notes.md"
+        run: gh release create "$GITHUB_REF_NAME" --verify-tag --title "pitcrew ${GITHUB_REF_NAME#v}" --notes-file "$RUNNER_TEMP/notes.md"
