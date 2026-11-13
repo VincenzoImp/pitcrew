@@ -79,8 +79,8 @@ token prints) and blocks catastrophic ones (recursive delete of home or the proj
 The gate runs the repo's check only in your own repo (admin permission) or one you trusted with
 pi's `/trust`; elsewhere it reminds the model to run a check. Set `PI_VERIFY="<command>"` to run a
 command in any repo. In your own repo, add a check it can find: a `verify` or `check` script in
-`package.json`, a `verify` target in a Makefile or justfile, or `scripts/verify`; `test` is never
-guessed ([verify-gate.md](verify-gate.md)).
+`package.json`, a `verify` target in a Makefile or justfile, `scripts/verify`, or else a `test`
+script or target ([verify-gate.md](verify-gate.md#which-command)).
 
 ## `pitcrew run` stops at the start
 
