@@ -1,7 +1,7 @@
 import { git as gitRun, gitStrict } from "./git.ts";
 import { ownSettings } from "./settings.ts";
 import { spawn, spawnSync, execFileSync } from "node:child_process";
-import { existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { randomBytes } from "node:crypto";
@@ -125,20 +125,60 @@ export const placeholder = () => `sk-ant-oat01-${randomBytes(60).toString("base6
 /**
  * pitcrew as committed, without its .git: `git archive <commit>` unpacked read-only to
  * <cacheDir>/pitcrew/<sha>. An npm install has no .git: its files are copied, keyed by version.
- * node_modules come from the install (mounted read-only): the package's own, or the folder an npm
- * install put the package and its dependencies in.
+ * A clone's node_modules are mounted read-only. An npm install lives in the folder its installer
+ * chose (pi's is under ~/.pi, which is never mounted), so its runtime dependencies are copied into
+ * the snapshot instead.
  */
 export function pitcrewSnapshot(cacheDir: string, repo = PKG) {
   const isGit = existsSync(join(repo, ".git"));
   const sha = isGit ? git(repo, "rev-parse", "HEAD^{commit}") : `npm-${JSON.parse(readFileSync(join(repo, "package.json"), "utf8")).version}`;
   const dir = join(cacheDir, "pitcrew", sha);
-  if (!existsSync(dir)) {
-    mkdirSync(dir, { recursive: true });
-    const copy = isGit ? 'git -C "$1" archive "$2" | tar -x -C "$3"' : 'tar -C "$1" --exclude=./node_modules -cf - . | tar -x -C "$3"';
-    execFileSync("sh", ["-c", `${copy} && mkdir -p "$3/node_modules" && chmod -R a-w "$3"`, "_", repo, sha, dir]);
-  }
   const own = join(repo, "node_modules");
-  return { sha, dir, modules: existsSync(own) ? own : dirname(dirname(repo)).endsWith("node_modules") ? dirname(dirname(repo)) : dirname(repo) };
+  const root = isGit || existsSync(own) ? undefined : npmRoot(repo);
+  if (!existsSync(dir)) {
+    // Built aside and renamed when complete, so a failed build is never reused.
+    const tmp = `${dir}.tmp-${randomBytes(4).toString("hex")}`;
+    mkdirSync(tmp, { recursive: true });
+    try {
+      const copy = isGit ? 'git -C "$1" archive "$2" | tar -x -C "$3"' : 'tar -C "$1" --exclude=./node_modules -cf - . | tar -x -C "$3"';
+      execFileSync("sh", ["-c", `${copy} && mkdir -p "$3/node_modules"`, "_", repo, sha, tmp]);
+      const deps = root ? dependencyDirs(root, repo) : [];
+      if (deps.length) execFileSync("sh", ["-c", 'r="$1" d="$2"; shift 2; tar -C "$r" -cf - "$@" | tar -x -C "$d/node_modules"', "_", root!, tmp, ...deps.map((d) => `./${d}`)]);
+      execFileSync("chmod", ["-R", "a-w", tmp]);
+      renameSync(tmp, dir);
+    } catch (e) {
+      execFileSync("chmod", ["-R", "u+w", tmp]);
+      rmSync(tmp, { recursive: true, force: true });
+      if (!existsSync(dir)) throw e;
+    }
+  }
+  return { sha, dir, modules: isGit || existsSync(own) ? own : undefined };
+}
+
+/** The node_modules folder an npm install put the package in (`<root>/<name>` or `<root>/@scope/<name>`). */
+function npmRoot(repo: string): string {
+  const up = dirname(resolve(repo));
+  return up.endsWith("node_modules") ? up : dirname(up);
+}
+
+/**
+ * Top-level folders of `root` that `pkg` needs at run time: its dependencies and theirs, found the way
+ * Node resolves them (a nested node_modules first, then `root`). Nested folders travel with their parent.
+ */
+export function dependencyDirs(root: string, pkg: string): string[] {
+  const top = new Set<string>(), seen = new Set<string>();
+  const walk = (dir: string) => {
+    if (seen.has(dir)) return;
+    seen.add(dir);
+    const meta = JSON.parse(readFileSync(join(dir, "package.json"), "utf8"));
+    for (const name of Object.keys({ ...meta.dependencies, ...meta.optionalDependencies })) {
+      const nested = join(dir, "node_modules", name);
+      if (existsSync(join(nested, "package.json"))) walk(nested);
+      else if (existsSync(join(root, name, "package.json"))) { top.add(name); walk(join(root, name)); }
+    }
+  };
+  walk(pkg);
+  return [...top].sort();
 }
 
 const git = gitStrict;
