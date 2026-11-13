@@ -1,5 +1,5 @@
 import { execFile } from "node:child_process";
-import { appendFileSync, copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
+import { appendFileSync, copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, utimesSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { promisify } from "node:util";
@@ -31,7 +31,14 @@ export async function treeId(root: string): Promise<string | undefined> {
     const index = join(dir, "index");
     // Start from the real index so unchanged files keep their cached stat data (fast on big repos).
     const real = resolve(root, (await git(["rev-parse", "--git-path", "index"])).stdout.trim());
-    try { copyFileSync(real, index); } catch {}
+    try {
+      copyFileSync(real, index);
+      // Keep the real index time: git rehashes files changed in the same tick as the index ("racy"
+      // entries) by comparing with this time. A fresh copy is newer than every file, so a same-size
+      // edit made right after the last index write could be taken as unchanged.
+      const { atime, mtime } = statSync(real);
+      utimesSync(index, atime, mtime);
+    } catch {}
     await git(["add", "-A"], { GIT_INDEX_FILE: index });
     return (await git(["write-tree"], { GIT_INDEX_FILE: index })).stdout.trim();
   } catch {
