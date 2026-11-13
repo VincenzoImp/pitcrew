@@ -4,7 +4,7 @@ import { chmodSync, existsSync, mkdirSync, mkdtempSync, rmSync, symlinkSync, wri
 import { homedir, tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
-import { BOX_RUN, checkCloneShape, checkMount, dockerRunArgs, fetchBack, parseArgs, prepareClone, prepareWorkdir, readToken } from "../lib/box.ts";
+import { BOX_RUN, checkCloneShape, checkMount, dependencyDirs, dockerRunArgs, fetchBack, parseArgs, pitcrewSnapshot, prepareClone, prepareWorkdir, readToken } from "../lib/box.ts";
 import { decide, DEFAULT_ALLOW, injectHeaders } from "../box/egress-proxy.mjs";
 
 const base = { id: "t1", work: "/tmp/w", pitcrewDir: "/tmp/pe", image: "pitcrew-box:1.5.2", memory: "16g", cpus: "8", pidsLimit: 512, guardAllow: "write-outside", command: ["pi", "-p", "x"] };
@@ -109,4 +109,40 @@ test("--workdir: refuses a plain checkout, a dirty tree, a detached HEAD; commit
   fetchBack(c);
   assert.equal(L.g(L.repo, "log", "-1", "--format=%s", "box/c1"), "clone work");
   assert.equal(L.g(L.repo, "log", "-1", "--format=%s", "main"), "init");
+});
+
+test("npm install: the snapshot carries the package's runtime dependencies and mounts no install folder", (t) => {
+  const tmp = mkdtempSync(join(tmpdir(), "box-npm-"));
+  t.after(() => { execFileSync("chmod", ["-R", "u+w", tmp]); rmSync(tmp, { recursive: true, force: true }); });
+  const root = join(tmp, "npm", "node_modules");
+  const pkg = (dir, meta) => { mkdirSync(dir, { recursive: true }); writeFileSync(join(dir, "package.json"), JSON.stringify(meta)); };
+  pkg(join(root, "@me", "tool"), { name: "@me/tool", version: "9.9.9", dependencies: { a: "1", "@s/b": "1" }, optionalDependencies: { gone: "1" } });
+  writeFileSync(join(root, "@me", "tool", "index.js"), "");
+  pkg(join(root, "a"), { name: "a", dependencies: { c: "1", d: "2" } });
+  pkg(join(root, "a", "node_modules", "d"), { name: "d", version: "2", dependencies: { e: "1" } });
+  pkg(join(root, "@s", "b"), { name: "@s/b" });
+  pkg(join(root, "c"), { name: "c" });
+  pkg(join(root, "d"), { name: "d", version: "1" });
+  pkg(join(root, "e"), { name: "e" });
+  pkg(join(root, "unrelated"), { name: "unrelated" });
+  assert.deepEqual(dependencyDirs(root, join(root, "@me", "tool")), ["@s/b", "a", "c", "e"]);
+  const snap = pitcrewSnapshot(join(tmp, "cache"), join(root, "@me", "tool"));
+  assert.equal(snap.sha, "npm-9.9.9");
+  assert.equal(snap.modules, undefined);
+  for (const p of ["index.js", "node_modules/a/node_modules/d/package.json", "node_modules/@s/b/package.json", "node_modules/c/package.json", "node_modules/e/package.json"])
+    assert.ok(existsSync(join(snap.dir, p)), p);
+  assert.ok(!existsSync(join(snap.dir, "node_modules", "unrelated")));
+  assert.ok(!existsSync(join(snap.dir, "node_modules", "d")));
+});
+
+test("snapshot: a build that fails leaves no cached folder behind", (t) => {
+  const tmp = mkdtempSync(join(tmpdir(), "box-fail-"));
+  t.after(() => { execFileSync("chmod", ["-R", "u+w", tmp]); rmSync(tmp, { recursive: true, force: true }); });
+  const root = join(tmp, "npm", "node_modules"), tool = join(root, "tool");
+  mkdirSync(tool, { recursive: true });
+  writeFileSync(join(tool, "package.json"), JSON.stringify({ name: "tool", version: "1.0.0", dependencies: { a: "1" } }));
+  mkdirSync(join(root, "a"));
+  writeFileSync(join(root, "a", "package.json"), "{ not json");
+  assert.throws(() => pitcrewSnapshot(join(tmp, "cache"), tool));
+  assert.deepEqual(execFileSync("ls", ["-A", join(tmp, "cache", "pitcrew")], { encoding: "utf8" }), "");
 });
